@@ -12,7 +12,7 @@ import Form from '../../components/Form';
 import { useFormBuilder } from '../../hooks/useFormBuilder';
 import { useAuth } from './hooks/useAuth';
 
-//actions
+// actions
 import { logout } from '../../redux/actions/auth';
 
 import formParam from './formParam';
@@ -88,7 +88,7 @@ function mapDispatchToProps(dispatch) {
   return {
     onLogout: () => dispatch(logout()),
   };
-};
+}
 
 Auth.propTypes = {
   onLogout: PropTypes.func,

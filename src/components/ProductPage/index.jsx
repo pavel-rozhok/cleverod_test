@@ -2,21 +2,21 @@ import React, { useState, useRef } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 
-//@material-ui
+// @material-ui
 import PhotoCamera from '@material-ui/icons/PhotoCamera';
 import Button from '@material-ui/core/Button';
 import CircularProgress from '@material-ui/core/CircularProgress';
 
-//components
-import Form from '../../components/Form';
+// components
+import Form from '../Form';
 
-//actions
+// actions
 import { alertOpen } from '../../redux/actions/alert';
 
-//utils
+// utils
 import uploadImage from '../../utils/uploadImage';
 
-//hooks
+// hooks
 import { useFormBuilder } from '../../hooks/useFormBuilder';
 
 import formParam from './formParam';
@@ -50,7 +50,7 @@ const ProductPage = (props) => {
     try {
       const image = await uploadImage(e);
       setImage(image);
-    } catch ({message}) {
+    } catch ({ message }) {
       propAlertOpen({ message });
     }
   };
@@ -124,7 +124,7 @@ function mapDispatchToProps(dispatch) {
   return {
     propAlertOpen: (payload) => dispatch(alertOpen(payload)),
   };
-};
+}
 
 ProductPage.propTypes = {
   propAlertOpen: PropTypes.func,

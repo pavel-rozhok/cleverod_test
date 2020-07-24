@@ -16,7 +16,7 @@ const EditProduct = ({ match: { params: { id } } }) => {
     photoUrL,
     isLoading,
     isSaving,
-    saveProduct
+    saveProduct,
   } = useEditPorduct(id);
 
   return (
@@ -31,10 +31,10 @@ const EditProduct = ({ match: { params: { id } } }) => {
               isLoading={isSaving}
               sendData={saveProduct}
             />
-          ) 
+          )
       }
     </div>
   );
 };
 
-export default withRouter(EditProduct)
+export default withRouter(EditProduct);

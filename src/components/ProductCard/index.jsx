@@ -21,24 +21,24 @@ const ProductCard = (props) => {
     discountExpirationDate,
     onChange,
     onRemove,
-    isAuth
+    isAuth,
   } = props;
 
   const action = isAuth && (
     <div className="product-card__action">
-    <IconButton
-      color="primary"
-      onClick={onChange}
-    >
-      <EditIcon />
-    </IconButton>
-    <IconButton
-      color="primary"
-      onClick={onRemove}
-    >
-      <DeleteIcon />
-    </IconButton>
-  </div>
+      <IconButton
+        color="primary"
+        onClick={onChange}
+      >
+        <EditIcon />
+      </IconButton>
+      <IconButton
+        color="primary"
+        onClick={onRemove}
+      >
+        <DeleteIcon />
+      </IconButton>
+    </div>
   );
 
   return (
@@ -70,7 +70,7 @@ ProductCard.propTypes = {
   title: PropTypes.string,
   description: PropTypes.string,
   photoUrL: PropTypes.string,
-  coast: PropTypes.string, 
+  coast: PropTypes.string,
   discountPercent: PropTypes.string,
   discountExpirationDate: PropTypes.string,
   onChange: PropTypes.func,

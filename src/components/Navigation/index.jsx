@@ -21,7 +21,7 @@ const Navigation = ({ isAuth }) => {
     links.push({
       to: '/create',
       label: 'Создать продукт',
-    })
+    });
   }
 
   const logout = {
@@ -58,7 +58,7 @@ function mapStateToProps(state) {
   return {
     isAuth: !!state.auth.token,
   };
-};
+}
 
 Navigation.propTypes = {
   isAuth: PropTypes.bool,

@@ -57,7 +57,7 @@ function mapDispatchToProps(dispatch) {
   return {
     onClose: () => dispatch(alertClear()),
   };
-};
+}
 
 AlertSnackbar.propTypes = {
   type: PropTypes.string,

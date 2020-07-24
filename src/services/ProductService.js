@@ -55,7 +55,7 @@ export default class PostService {
   }
 
   static async updateProduct(data, id) {
-    axiosInstance.patch(url.path + id + url.postfix, data)
+    axiosInstance.patch(url.path + id + url.postfix, data);
   }
 
   static async removeProductById(id, originPhotoUrl) {

@@ -9,7 +9,7 @@ import EditProduct from './views/EditProduct';
 import CreateProduct from './views/CreateProduct';
 import ProductList from './views/ProductList';
 import Snackbar from './components/Snackbar';
-import { Layout } from './components/Layout'
+import { Layout } from './components/Layout';
 
 // actions
 import { autoLogin } from './redux/actions/auth';
@@ -54,17 +54,17 @@ function App({ isAuth, propAutoLogin }) {
         <Layout>
           <Component />
         </Layout>
-      )
+      );
     }
     return <Component />;
-  } 
+  };
 
   return (
     <>
       <Snackbar />
       <Switch>
-        { 
-          routes.map(route => (
+        {
+          routes.map((route) => (
             <Route
               key={route.path}
               path={route.path}
@@ -83,14 +83,13 @@ function mapStateToProps(state) {
   return {
     isAuth: !!state.auth.token,
   };
-};
+}
 
 function mapDispatchToProps(dispatch) {
   return {
     propAutoLogin: () => dispatch(autoLogin()),
   };
-};
-
+}
 
 App.propTypes = {
   isAuth: PropTypes.bool,

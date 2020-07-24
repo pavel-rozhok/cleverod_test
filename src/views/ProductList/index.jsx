@@ -63,4 +63,4 @@ function mapStateToProps(state) {
   };
 }
 
-export default connect(mapStateToProps)(Products)
+export default connect(mapStateToProps)(Products);

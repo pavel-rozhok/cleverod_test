@@ -103,12 +103,11 @@ export const useFormBuilder = (formParam = {}, formData = {}) => {
     if (isInvalid) {
       setErorMessage();
       return false;
-    } else {
-      return Object.keys(form).reduce((acc, key) => ({
-        ...acc,
-        [key]: form[key].value || '',
-      }), {});
     }
+    return Object.keys(form).reduce((acc, key) => ({
+      ...acc,
+      [key]: form[key].value || '',
+    }), {});
   };
 
   return {

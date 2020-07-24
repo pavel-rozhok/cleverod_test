@@ -11,9 +11,9 @@ export default () => {
   } = useCreateProduct();
 
   return (
-    <ProductPage 
+    <ProductPage
       sendData={sendData}
       isLoading={isLoading}
     />
-  )
+  );
 };

@@ -25,7 +25,7 @@ export const useProductList = () => {
   };
 
   const openEditPage = (id) => {
-    history.push('/edit/' + id);
+    history.push(`/edit/${id}`);
   };
 
   useEffect(() => {
