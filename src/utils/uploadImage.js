@@ -38,13 +38,13 @@ export default (event) => new Promise((resolve, reject) => {
           await sizeValidation(photoB64, { min: 200, max: 4000 });
           resolve([photoFile, photoB64]);
         } catch (error) {
-          reject(new Error('size error: width and hight must be between 200px and 4000px'));
+          reject(new Error('Ошибка размера: ширина и высота должны быть от 200px до 4000px'));
         }
       };
     } else {
-      reject(new Error(`invalid file type: allowed types ${validTypes.join(',')}`));
+      reject(new Error(`Неверный тип файла: разрешенные типыs ${validTypes.join(',')}`));
     }
   } else {
-    reject(new Error('error'));
+    reject(new Error('Ошибка!'));
   }
 });

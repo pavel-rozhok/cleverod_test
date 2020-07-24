@@ -2,7 +2,7 @@ export default {
   title: {
     type: 'text',
     name: 'title',
-    label: 'Title',
+    label: 'Название',
     value: '',
     validation: {
       require: true,
@@ -13,7 +13,7 @@ export default {
   description: {
     type: 'text',
     name: 'description',
-    label: 'description',
+    label: 'Описание',
     multiline: true,
     rows: 4,
     value: '',
@@ -24,7 +24,7 @@ export default {
   coast: {
     type: 'text',
     name: 'coast',
-    label: 'coast',
+    label: 'Цена',
     value: '',
     prefix: '$',
     pattern: ['^(?=.*\\d)\\d*(?:\\.\\d{0,2})?$', 'g'],
@@ -37,7 +37,7 @@ export default {
   discountPercent: {
     type: 'text',
     name: 'discountPercent',
-    label: 'discount',
+    label: 'Скидка',
     prefix: '%',
     value: '',
     pattern: ['^[0-9]+$', 'g'],
@@ -52,7 +52,7 @@ export default {
     prefix: ' ',
     type: 'date',
     name: 'discountExpirationDate',
-    label: 'discount Expiration Date',
+    label: 'Время действия скидки',
     value: '',
   },
 };

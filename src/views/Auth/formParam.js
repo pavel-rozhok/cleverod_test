@@ -2,7 +2,7 @@ export default {
   email: {
     type: 'text',
     name: 'email',
-    label: 'email',
+    label: 'Email',
     value: '',
     validation: {
       email: true,
@@ -11,7 +11,7 @@ export default {
   password: {
     type: 'password',
     name: 'password',
-    label: 'password',
+    label: 'Пароль',
     value: '',
     validation: {
       minLength: 8,
