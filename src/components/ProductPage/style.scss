@@ -1,0 +1,25 @@
+.create-product {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+
+  &__form-wrapper {
+    max-width: 90%;
+    width: 900px;
+  }
+
+  &__footer {
+    text-align: right;
+  }
+
+  &__file-input {
+    display: none;
+  }
+
+  &__image {
+    object-fit: contain;
+    width: 200px;
+    height: 200px;
+    margin-right: 30px;
+  }
+}

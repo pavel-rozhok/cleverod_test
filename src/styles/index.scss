@@ -1,0 +1,48 @@
+@import "~normalize.css";
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+body,
+html {
+  height: 100%;
+}
+
+#root {
+  height: 100%;
+}
+
+body {
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+textarea {
+  vertical-align: middle;
+}
+
+button {
+  &:focus {
+    outline: none;
+  }
+}
+
+.g-spiner {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 10;
+}

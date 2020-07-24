@@ -1,0 +1,6 @@
+export const AUTH_LOGIN_SUCCESS = 'AUTH_LOGIN_SUCCESS';
+export const AUTH_LOGOUT = 'AUTH_LOGOUT';
+
+export const ALERT_ON = 'ALERT_ON';
+export const ALERT_CLOSE = 'ALERT_CLOSE';
+export const ALERT_CLEAR_MESSAGE = 'ALERT_CLEAR_MESSAGE';

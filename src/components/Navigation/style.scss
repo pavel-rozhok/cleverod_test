@@ -1,0 +1,12 @@
+.navigation {
+  &__container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__link {
+    color: #fff;
+    text-transform: uppercase;
+    margin-right: 10px;
+  }
+}
